@@ -21,7 +21,7 @@ export const projects: Project[] = [
       'A modern platform concept for simplifying community communication, organization, and shared information.',
     technologies: ['Next.js', 'TypeScript', 'PostgreSQL'],
     github: 'https://github.com/NRMRaiyan/kohela-muslim-shomiti',
-    live: '#https://kohela-muslim-shomiti.vercel.app/',
+    live: 'https://kohela-muslim-shomiti.vercel.app/',
     featured: true,
   },
   // {
