@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Space_Grotesk, Inter } from 'next/font/google';
+import { Analytics } from "@vercel/analytics/next"
 import './globals.css';
 
 const space = Space_Grotesk({ subsets: ['latin'], variable: '--font-space', display: 'swap' });
