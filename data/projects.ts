@@ -20,6 +20,7 @@ export const projects: Project[] = [
     description:
       'A modern platform concept for simplifying community communication, organization, and shared information.',
     technologies: ['Next.js', 'TypeScript', 'PostgreSQL'],
+    image: "/images/projects/kohela-samity.png",
     github: 'https://github.com/NRMRaiyan/kohela-muslim-shomiti',
     live: 'https://kohela-muslim-shomiti.vercel.app/',
     featured: true,
