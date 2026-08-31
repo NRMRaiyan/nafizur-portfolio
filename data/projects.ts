@@ -7,7 +7,7 @@ export type Project = {
   technologies: string[];
   github: string;
   live: string;
-  image?: string;
+  image: string;
   featured: boolean;
 };
 

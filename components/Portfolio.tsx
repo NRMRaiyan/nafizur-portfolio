@@ -10,6 +10,7 @@ import { profile } from '@/data/profile';
 import { projects } from '@/data/projects';
 import { skillGroups } from '@/data/skills';
 import { socialLinks } from '@/data/social';
+import Image from 'next/image';
 import { CommandPalette } from './CommandPalette';
 import { Section } from './Section';
 import { ThemeToggle } from './ThemeToggle';
@@ -86,7 +87,19 @@ export function Portfolio() {
           </Section>
 
           <Section id="projects" index="04" label="DEPLOYED WORK" title="SELECTED PROJECTS">
-            <div className="projectStack">{projects.filter(p => p.featured).map((project) => <article className="projectCard" key={project.id}><div className="projectTop"><span>{project.number}</span><span>{project.eyebrow}</span><span>2026</span></div><div className="projectVisual"><div className="visualGrid" /><div className="visualLabel">PROJECT / PREVIEW</div><div className="visualOrb" /></div><div className="projectInfo"><div><h3>{project.title}</h3><p>{project.description}</p></div><div className="projectSide"><div className="tags">{project.technologies.map(t => <span key={t}>{t}</span>)}</div><div className="links"><a href={project.live}>Live system <MoveUpRight size={14} /></a><a href={project.github}>Source code <Github size={14} /></a></div></div></div></article>)}</div>
+            <div className="projectStack">{projects.filter(p => p.featured).map((project) => <article className="projectCard" key={project.id}>
+              <div className="projectTop"><span>{project.number}</span><span>{project.eyebrow}</span><span>2026</span></div>
+              <div className="projectVisual">
+                <div className="visualGrid" />
+                <div className="visualLabel">PROJECT / PREVIEW</div>
+                <div className="visualOrb" /></div>
+                <div className="projectInfo">
+                  <div><h3>{project.title}</h3><p>{project.description}</p></div>
+                  <div className="projectSide"><div className="tags">{project.technologies.map(t => <span key={t}>{t}</span>)}</div>
+                  <div className="links"><a href={project.live}>Live system <MoveUpRight size={14} /></a><a href={project.github}>Source code <Github size={14} /></a></div>
+                </div>
+              </div></article>)}
+            </div>
           </Section>
 
           <Section id="experience" index="05" label="EXPERIENCE LOG" title="MY JOURNEY">
