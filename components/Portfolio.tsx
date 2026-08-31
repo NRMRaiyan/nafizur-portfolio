@@ -60,7 +60,7 @@ export function Portfolio() {
               </div>
               <div className="heroTelemetry">
                 <div><span>LOCATION</span><strong>{profile.location.toUpperCase()}</strong></div>
-                <div><span>FOCUS</span><strong>SOFTWARE ENGINEERING</strong></div>
+                <div><span>FOCUS</span><strong>ENGINEERING</strong></div>
                 <div><span>STATUS</span><strong><i className="statusDot" /> BUILDING</strong></div>
                 <div><span>VERSION</span><strong>2026.01</strong></div>
               </div>
@@ -73,7 +73,7 @@ export function Portfolio() {
           <Section id="about" index="01" label="IDENTITY / PROFILE" title="ABOUT ME">
             <div className="aboutGrid">
               <div className="statement">ENGINEER.<br /><span>BUILDER.</span><br />LEARNER.</div>
-              <div className="prose"><p>I&apos;m Nafizur Rahman Mallick, a Computer Science student interested in software engineering, modern web technologies, and building useful digital products.</p><p>I&apos;m early in my engineering journey, which means I&apos;m constantly learning, experimenting, breaking things, and rebuilding them better. I care about understanding problems before writing solutions.</p><div className="miniQuote">“Engineering is not only about writing code. It&apos;s about designing thoughtful solutions.”</div></div>
+              <div className="prose"><p>I&apos;m Nafizur Rahman Mallick, a Computer Science student interested in software engineering, modern web technologies, AI/ML and building useful digital products.</p><p>I&apos;m early in my engineering journey, which means I&apos;m constantly learning, experimenting, breaking things, and rebuilding them better. I care about understanding problems before writing solutions.</p><div className="miniQuote">“Engineering is not only about writing code. It&apos;s about designing thoughtful solutions.”</div></div>
             </div>
           </Section>
 
