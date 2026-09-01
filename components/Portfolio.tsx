@@ -90,9 +90,14 @@ export function Portfolio() {
             <div className="projectStack">{projects.filter(p => p.featured).map((project) => <article className="projectCard" key={project.id}>
               <div className="projectTop"><span>{project.number}</span><span>{project.eyebrow}</span><span>2026</span></div>
               <div className="projectVisual">
-                <div className="visualGrid" />
-                <div className="visualLabel">PROJECT / PREVIEW</div>
-                <div className="visualOrb" /></div>
+                <Image
+                  src={project.image}
+                  alt={`${project.title} project preview`}
+                  fill
+                  className="projectImage"/>
+                {/* <div className="visualGrid" />
+                <div className="visualLabel">PROJECT / PREVIEW</div> */}
+                </div>
                 <div className="projectInfo">
                   <div><h3>{project.title}</h3><p>{project.description}</p></div>
                   <div className="projectSide"><div className="tags">{project.technologies.map(t => <span key={t}>{t}</span>)}</div>
